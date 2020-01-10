@@ -15,9 +15,9 @@ Spotify 设置为直连避免频繁掉线，只测试了付费版，免费版没
 1、打开 Quantumult 软件，进入设置 - 分流、链接阻止、HTTP复写（ 清空这三项里面的规则，全部都删除掉。 ）<br><br>
 
 2、进入设置 - 订阅（ 在订阅里添加规则 ）<br>
-2.1、点击右上角加号 - 选择分流 - 名称随便输入，链接复制下面的链接并保存：<br>
+2.1、点击右上角加号 - 选择分流 - 名称随便输入，链接那里输入下面的链接并保存：<br>
 https://github.com/bbbe-me/Rules/raw/master/Quantumult/Quantumult.conf<br>
-2.2、点击右上角加号 - 链接阻止 - 名称随便输入，链接复制下面的链接并保存：<br>
+2.2、点击右上角加号 - 链接阻止 - 名称随便输入，链接那里输入下面的链接并保存：<br>
 https://github.com/bbbe-me/Rules/raw/master/Quantumult/Quantumult_URL.conf<br><br>
 
 3、在刚添加的分流和链接阻止两个规则那里向左滑动 - 点击增加，就可以把规则添加进去了，后期更新向左滑动 - 点击替换即可完成更新。
