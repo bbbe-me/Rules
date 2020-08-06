@@ -1,23 +1,26 @@
 # 老伙计加速器客户专用规则
-该规则主体部分来自其他开源项目，老伙计做了一些适配和优化，目前仅支持 Quantumult , 具体优化如下：<br><br>
+### 本规则用于和老伙计加速器使用说明视频配合使用，如有补充或问题请通过你知道的方式联系我们反馈，具体操作请参见我们的使用说明页面，下方为简单摘要客户无须关注。
 
-老伙计网站走代理<br>
-屏蔽 YouTube APP 广告<br>
-屏蔽一些国内 APP 开屏广告和常见视频网站广告<br>
-Apple TV+ 流媒体通过代理访问避免直连卡顿影响观看体验<br>
-iCloud 与照片相关应用通过代理访问避免直连加载过慢导致卡顿<br>
-FaceTime 视频聊天直连效果比走代理好，所以 FaceTime 设置为直连。<br>
-Spotify 设置为直连避免频繁掉线，只测试了付费版，免费版没测试不知道好不好用。<br><br>
 
-该规则老伙计自用且都实测过，如有修改意见建议请通过你知道的沟通渠道联系我们。
 
-# 使用说明
-1、打开 Quantumult 软件，进入设置 - 分流、链接阻止、HTTP复写（ 清空这三项里面的规则，全部都删除掉。 ）<br><br>
+### 屏蔽规则 : 用于屏蔽广告
 
-2、进入设置 - 订阅（ 在订阅里添加规则 ）<br>
-2.1、点击右上角加号 - 选择分流 - 名称随便输入，链接那里输入下面的链接并保存：<br>
-https://github.com/bbbe-me/Rules/raw/master/Quantumult/Quantumult.conf<br>
-2.2、点击右上角加号 - 链接阻止 - 名称随便输入，链接那里输入下面的链接并保存：<br>
-https://github.com/bbbe-me/Rules/raw/master/Quantumult/Quantumult_URL.conf<br><br>
+```
+https://github.com/bbbe-me/Rules/raw/master/Quantumult X/AdBlock.conf
+```
 
-3、在刚添加的分流和链接阻止两个规则那里向左滑动 - 点击增加，就可以把规则添加进去了，后期更新向左滑动 - 点击替换即可完成更新。
+
+
+### 重写规则 : 用于重写HTTP协议为HTTPS
+
+```
+https://github.com/bbbe-me/Rules/raw/master/Quantumult X/Rewrite.conf
+```
+
+
+
+### Apple : 用于处理Apple服务相关流量，现在国内Apple服务比较顺畅所以除了 Apple TV+ 走代理其他全部直连。
+
+```
+https://github.com/bbbe-me/Rules/raw/master/Quantumult X/Apple.conf
+```
